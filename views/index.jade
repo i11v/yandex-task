@@ -1,0 +1,24 @@
+- var hash = commit ? "?" + commit : "";
+
+doctype 5
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    title #{ title }
+    link(rel="stylesheet", type="text/css", href="public/build/main.css#{ hash }")
+  body
+    .layout
+      .layout__tabs
+        .layout__tabs__bar
+          include blocks/bar
+
+        .layout__tabs__content
+          include blocks/content
+
+      .layout__console
+        include blocks/console
+
+    if dev
+      script(type="text/javascript", src="public/build/ya-task.js")
+    else
+      script(type="text/javascript", src="public/build/ya-task.min.js#{ hash }")

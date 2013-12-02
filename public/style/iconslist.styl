@@ -1,0 +1,51 @@
+/**
+ * Block: iconslist
+ */
+
+.iconlist
+  width 100%
+
+  &__item
+    display inline-block
+    vertical-align top
+    margin 5px
+
+    &_pulled
+      float right
+
+.icon
+  min-width 100px
+  min-height 118px
+
+  &__alt
+    display none
+    font-size 0.7em
+    text-align center
+
+    &__green
+      color #22a12a
+
+    &__red
+      color #c90000
+
+    &__yellow
+      color #f9d411
+
+    &__firefox
+      color #f2a414
+
+    &__opera
+      color #c10e0e
+
+    &__safari
+      color #646464
+
+    &__ie
+      color #036da3
+
+  &_error
+    .icon__img
+      display none
+
+    .icon__alt
+      display block

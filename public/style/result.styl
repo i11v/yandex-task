@@ -1,0 +1,33 @@
+/**
+ * Block: result
+ */
+
+.result
+  &__cmd
+    width 100%
+    line-height 1.5em
+    position relative
+
+    &__promt
+      @extend .cmd__promt
+      height auto
+      line-height 1.5em
+
+      &__text
+        color #888
+
+    &__command
+      padding 3px 1.5em 0
+      border-bottom 1px solid #eee
+
+      &__text
+        color $cmd-accent-color
+
+  &__out
+    padding 3px 0 0 1.5em
+    line-height 1.5em
+    border-bottom 1px solid #eee
+    color #444
+
+    &_indent
+      padding-left 3em

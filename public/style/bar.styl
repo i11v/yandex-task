@@ -1,0 +1,33 @@
+/**
+ * Block: bar
+ */
+
+$tabs-bar-offset = 10px
+$tab-height = $tabs-bar-height - $tabs-bar-offset
+
+.bar
+  height 100%
+  user-select none
+  border-bottom 1px solid #aaa
+  box-sizing border-box
+
+  &__tab
+    inline-block()
+    height $tab-height
+    line-height $tab-height
+    margin $tabs-bar-offset 0 0
+    background #cfcfcf
+    background linear-gradient(#eee 0%, #cfcfcf 100%)
+    border 1px solid #aaa
+    border-radius 5px 5px 0 0
+    box-sizing border-box
+
+    &__text
+      padding 0 10px
+      font-size 0.6em
+
+    &_active
+      z-index 1
+      background $browser-border-color
+      background linear-gradient(#efefef 0%, $browser-border-color 100%)
+      border-bottom-color $browser-border-color

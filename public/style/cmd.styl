@@ -1,0 +1,37 @@
+/**
+ * Block: cmd
+ */
+
+$input-offset = 1.5em
+$cmd-offset = 2px
+$cmd-accent-color = #48f
+
+.cmd
+  size 100%
+  border-top 1px solid #ddd
+  padding-top $cmd-offset
+
+  &__promt
+    absolute top (1px + $cmd-offset) left
+    size $input-offset 100%
+    line-height 2em
+    text-align center
+
+    &__text
+      font-weight 800
+      color $cmd-accent-color
+
+  &__input
+    size 100%
+
+    &__input
+      @extend $monospaced
+      box-sizing border-box
+      size 100%
+      line-height 2em
+      margin 0
+      padding 0 0.5em 0 $input-offset
+      border 0
+
+      &:focus
+        outline none

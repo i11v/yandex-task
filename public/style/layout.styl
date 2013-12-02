@@ -1,0 +1,47 @@
+/**
+ * Page
+ * Block: layout
+ */
+
+$tabs-bar-height = 40px
+$console-height = 200px
+$browser-border-width = 1px
+$browser-border-color = #eee
+$browser-border = $browser-border-width solid $browser-border-color
+
+@import url("http://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic,latin")
+
+html
+body
+  height 100%
+  overflow hidden
+
+body
+  margin 0
+  padding 0
+  font 400 24px/150% "PT Sans", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+.layout
+  position relative
+  height 100%
+  margin 0 auto
+
+  &__tabs
+    &__bar
+      height $tabs-bar-height
+      width 100%
+      box-sizing border-box
+
+    &__content
+      border-top 3px solid $browser-border-color
+      absolute top $tabs-bar-height bottom ($console-height + 2 * $browser-border-width)
+      width 100%
+      box-sizing border-box
+
+  &__console
+    @extend $monospaced
+    absolute left bottom
+    size 100% $console-height
+    border $browser-border
+    border-top 0
+    box-sizing border-box

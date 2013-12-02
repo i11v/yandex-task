@@ -1,0 +1,33 @@
+script.
+  function imgLoadErrorHandler(img) {
+    img.parentElement.className += " icon_error";
+  }
+
+.iconlist
+  .iconlist__item
+    .icon
+      img.icon__img(onerror="imgLoadErrorHandler(this)", src="./public/i/icon-chrome.png")
+      .icon__alt
+        span.icon__alt__green Ch
+        span.icon__alt__red ro
+        span.icon__alt__yellow me
+  .iconlist__item
+    .icon
+      img.icon__img(onerror="imgLoadErrorHandler(this)", src="./public/i/icon-firefox.png")
+      .icon__alt
+        span.icon__alt__firefox Firefox
+  .iconlist__item
+    .icon
+      img.icon__img(onerror="imgLoadErrorHandler(this)", src="./public/i/icon-opera.png")
+      .icon__alt
+        span.icon__alt__opera Opera
+  .iconlist__item
+    .icon
+      img.icon__img(onerror="imgLoadErrorHandler(this)", src="./public/i/icon-safari.png")
+      .icon__alt
+        span.icon__alt__safari Safari
+  .iconlist__item.iconlist__item_pulled
+    .icon
+      img.icon__img(onerror="imgLoadErrorHandler(this)", src="./public/i/icon-ie.png")
+      .icon__alt
+        span.icon__alt__ie Internet Exploder
