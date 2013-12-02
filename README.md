@@ -8,6 +8,8 @@
 
 ## Результат
 
-![Скрин результата](http://ilnurkhalilov.ru/yandex-task/public/i/screenshot.png)
+![Скрин результата][1]
 
 [Демо](http://ilnurkhalilov.ru/yandex-task/index.html)
+
+[1]: http://ilnurkhalilov.ru/yandex-task/public/i/screenshot.png
